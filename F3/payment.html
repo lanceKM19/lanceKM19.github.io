@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMPIANATICS: by: Magsies</title>
+    <link rel="stylesheet" href="css\style.css">
+</head>
+
+<body>
+    <header>
+        <img src="images\Lumpianatics.png">
+        <h1>LUMPIANATICS</h1>
+        <h5>by: Lance Karol M. Mamaril</h5>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <a href="index.html">Home</a>
+            <a href="shopping.html">Shop</a>
+            <a href="profile.html">Profile</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="login.html">Login</a>
+        </nav>
+    
+        <main class="content">
+            <h2>CHECKOUT</h2>
+            <div class="orders">
+                <h3>Your Order</h3>
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span>₱0</span>
+                </div>
+                <div class="summary-row">
+                    <span>Delivery Fee:</span>
+                    <span>₱0</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total:</span>
+                    <span>₱0</span>
+                </div>
+            </div>
+
+            <div class="checkout-container">
+                <section class="delivery-options">
+                    <h3>Delivery Options</h3>
+                    <label><input type="radio" name="delivery" value="lalamove"> LalaMove (₱50)</label><br>
+                    <label><input type="radio" name="delivery" value="moveit"> MoveIt (₱40)</label><br>
+                    <label><input type="radio" name="delivery" value="pickup"> Store PickUp (₱0)</label><br><br>
+
+                    <label for="address">Shipping Address:</label><br>
+                    <input type="text" id="address" class="D_address" placeholder="Enter your delivery address">
+                </section>
+
+                <section class="payment-options">
+                    <h3>Payment Methods</h3>
+                    <label><input type="radio" name="payment" value="gcash"> GCash</label><br>
+                    <label><input type="radio" name="payment" value="credit"> Credit/Debit Card</label><br>
+                    <label><input type="radio" name="payment" value="cod"> Cash on Delivery</label>
+                </section>
+                
+            </div>
+                <div class="confirm-container">
+                <a href="transaction.html" class="btn">CONFIRM PAYMENT</a>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 LUMPIANATICS | Contact: 0956-420-4354 | Email: Lumpianatics@gmail.com</p>
+    </footer>
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>

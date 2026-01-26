@@ -1,0 +1,479 @@
+:root {
+  --body-bg: white;
+  --body-text: black;
+  --sidebar-bg: yellow;
+  --sidebar-text: black;
+  --theme-switcher: red;
+  --theme-switcher-color: white;
+  --header: black;
+  --footer: black;
+  --footer-p: white;
+  --h1: white;
+  --h5: white;
+  --sidebar-a-hover: red;
+  --sidebar-a-hover-color: white;
+  --box-background-color: white;
+}
+
+.dark-theme {
+  --body-bg: black;
+  --body-text: white;
+  --sidebar-bg: #C4A484;
+  --sidebar-text: white;
+  --theme-switcher: yellow;
+  --theme-switcher-color: black;
+  --header: white;
+  --footer: white;
+  --footer-p: black;
+  --h1: black;
+  --h5: black;
+  --sidebar-a-hover: yellow;
+  --sidebar-a-hover-color: black;
+  --box-background-color: black;
+}
+
+
+body { 
+    background-color: var(--body-bg); 
+    color: var(--body-text); 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+header {
+    display: flex;
+    padding: 30px;
+    align-items: center ;
+    gap: 50px;
+    background-color: var(--header);
+}
+
+h1 {
+    color: var(--h1);
+    text-align: center;
+    font-size: 100px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2 {
+    font-size: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h5 {
+    color: var(--h5);
+    text-align: center;
+    font-size: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+}
+
+.container {
+    display: flex;
+    min-height: 80vh;
+}
+
+.sidebar { 
+    width: 300px; 
+    background-color: var(--sidebar-bg); 
+    padding: 15px; 
+}
+
+.sidebar a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: var(--sidebar-text);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--sidebar-bg);
+    transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: var(--sidebar-a-hover);
+    color: var(--sidebar-a-hover-color);
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    gap: 20px;
+}
+
+.grid-container {   
+    display: grid; 
+    grid-template-columns: repeat(2, 0fr);
+    gap: 30px; }
+
+.box {
+    text-align: center;
+    background-color: var(--box-background-color);
+    padding: 10px;
+    border: 1px solid #ccc;   
+}
+
+.box img {
+  transition: transform 0.3s ease;
+}
+
+.box:hover img {
+  transform: scale(1.05);
+}
+
+.content p {
+    font-size: 30px;
+}
+
+.content h2 {
+    font-size: 30px;
+}
+
+.content h3 {
+    font-size: 30px;
+}
+
+.grid-shopping{
+    display: grid; 
+    grid-template-columns: repeat(1, 0fr); 
+  }
+
+
+footer {
+    padding: 20px;
+    background-color: var(--footer);
+}
+
+footer p {
+    color: var(--footer-p);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+.form-contact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-contact label {
+  width: 200px;
+  margin-right: 10px;
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.form-contact input {
+  padding: 10px;
+  width: 500px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+}
+.form-contact textarea {  
+  padding: 30px;
+  width: 460px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+}
+
+.form-login {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.form-login label {
+  width: 200px;
+  margin-right: 10px;
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.form-login input {
+  padding: 10px;
+  width: 500px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+}
+
+.form-login textarea {  
+  padding: 30px;
+  width: 460px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+}
+
+/* ----------------------CONTACT US BUTTON PART-------------------------- */
+button {
+  display: block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 125px;
+  height: 50px;
+}
+
+button:hover {
+  background-color: lightblue;
+}
+
+/* ----------------------LOGIN AND SIGN UP BUTTON PART-------------------------- */
+.btn {
+  display: block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: blue;
+  text-decoration: none;
+  text-align: center;
+  line-height: 32px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 85px;
+  height: 33px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn:hover {
+  background-color: lightblue;
+}
+
+/* ----------------------WEB SWITCH THEME PART-------------------------- */
+
+#theme-switcher {
+  display: block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: var(--theme-switcher);
+  color: var(--theme-switcher-color);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 300px;
+  height: 50px;
+  font-weight: bold;
+}
+
+/* ----------------------SHOPPING BUTTON PART-------------------------- */
+
+.cart-controls {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.S-button {
+  all: unset;
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 100px;
+  background: white;
+  position: relative;
+  cursor: pointer;
+}
+
+.S-button.minus::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  width: 60%;
+  height: 2px;
+  background: black;
+}
+
+.S-button.plus::before,
+.S-button.plus::after {
+  content: "";
+  position: absolute;
+  background: black;
+}
+
+.S-button.plus::before {
+  top: 50%;
+  left: 20%;
+  width: 60%;
+  height: 2px;
+  transform: translateY(-50%);
+}
+
+.S-button.plus::after {
+  left: 50%;
+  top: 20%;
+  width: 2px;
+  height: 60%;
+  transform: translateX(-50%);
+}
+
+/* ----------------------SHOPPING DETAILS PART -------------------------- */
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+}
+
+.label-item {
+  flex: 1;
+  text-align: left;
+  padding-left: 220px;
+}
+
+.label-price {
+  flex: 1;
+  text-align: center;
+}
+
+.label-quantity {
+  flex: 1;
+  text-align: right;
+  padding-right: 15px;
+}
+
+
+.shop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.shop img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.shop-details {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.shop-details .name,
+.shop-details .price {
+  font-size: 30px;
+}
+
+.quantity {
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* ----------------------SHOPPING CHECKOUT PART-------------------------- */
+.MyCart { 
+  margin-left: auto;
+  padding: 20px;
+  max-width: 700px;
+}
+
+.MyCart h3 {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 30px;
+}
+
+.summary-row.total {
+  font-weight: bold;
+  font-size: 30px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+/* ----------------------PAYMENT AND DELIVERY PART-------------------------- */
+
+.orders h3{
+  font-size: 30px;
+}
+
+.checkout-container {
+  display: flex;
+  gap: 30px;
+}
+
+.delivery-options, .payment-options {
+  flex: 1;
+  padding: 25px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 25px;
+}
+
+.D_address {
+  width: 500px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.delivery-options h3, .payment-options h3 {
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.confirm-container {
+  display: flex;
+  justify-content: flex-end;
+  margin:auto;
+}
+
+.confirm-btn {
+  width: 200px;
+  height: 80px;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+/* ----------------------TRANSACTION RECIEPT PART-------------------------- */
+.confirmation {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background: white;
+  border: 1px solid #ccc;
+  text-align: center;
+  border-radius: 12px;
+  font-size: 22px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.confirmation h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: green;
+  align-items: center;
+}
+
+.confirmation .checkmark {
+  font-size: 60px;
+  color: green;
+  margin-bottom: 10px;
+}
+
+.confirmation-details{
+  text-align: left;
+  font-size: 30px; 
+  margin-bottom: 20px;
+} 
